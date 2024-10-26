@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    
+}
+
+h1 {
+    color:#05064d;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.section1, .section2 {
+    margin-left: 50px;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+h2 {
+    color: #362a52;
+}
+
+p {
+    font-size: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: 300px; 
+    border-radius: 8px; 
+    display: block;
+    margin: 10px auto;
+}
+li {
+    color:#000;
+}
+ul, ol {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+h3{
+    color: #000;
+}
+h2{
+    color: #47349e;
+}
+a:hover {
+    text-decoration: underline;
+    color: #0c073a;
+}
+ .form{
+    padding-left: 20%;
+ }
+ th{
+    background-color: #47349e;
+ }
+ form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #4d427e;
+}
+
+label {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"],
+input[type="email"],
+textarea{
+    width: 80%;
+    border-color:#090b4e;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+button {
+    width: 60%;
+    padding: 12px;
+    background-color: #1a097c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 15%;
+}
+
+button:hover {
+    background-color: #3c47e7;
+}

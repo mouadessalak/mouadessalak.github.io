@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentation</title>
+    <link rel="stylesheet" href="esaalak.css">
+</head>
+<body>
+    <h1>Mouad Essalak</h1>
+    <section class="section1">
+    <h2>-About me</h2>
+    <p>Je suis Mouad Essalak , future ingenieur en informatique ,j'ai 19ans et je vis a Casablanca , je suis actuellement
+        en 3eme année a l'ECOLE MAROCAINE DES SCIENCES DE L'INGENIEUR. Dés mon entrée dans ce domaine,j'ai decouvert
+        plusieurs choses en ce qui concerne le domaine d'informatique qui est un domaine trés riche et qui n'a pas de limite 
+        et qui est très profond. Je suis une personne qui aime bien apprendre et developper ses qualités , c'est pour ça 
+        j'essaie toujours d'enrichir mon dictionnaire avec le maximum possible d'informations.
+        </p>
+        <img src="essalak.jpg">
+    </section>
+    
+    <h2>Hobbies</h2>
+    <ul>
+        <li>Jeux video</li>
+        <li>Football</li>
+    </ul>
+    <h2>Objectifs</h2$>
+        <ol>
+            <li>Devenir un developpeur de qualité</li>
+            <li>Ameliorer mes competences le maximum possible</li>
+            <li>Chercher dans d'autres domaines dans mon temps vide</li>
+        </ol>
+
+    <h2>-Tableau d'amis</h2>
+
+<table border="2">
+    <tr>
+        <thead>
+        <th>Nom</th>
+        <th>Age</th>
+        <th>Ville</th>
+        <th>Lien de profil</th>
+    </thead>
+    </tr>
+    <tbody>
+        <tr>
+            <td>Aymen el hafri</td>
+            <td>22ans</td>
+            <td>Oran</td>
+            <td><a href=" www.linkedin.com">voir le profil de Ayman</a></td>
+        </tr>
+        <tr>
+            <td>Yassine fertate</td>
+            <td>20ans</td>
+            <td>Nouadhibou</td>
+            <td><a href=" www.linkedin.com">voir le profil de Yassine</a></td>
+        </tr>
+        <tr>
+            <td>Alaa kotb</td>
+            <td>19ans</td>
+            <td>Algerie</td>
+            <td><a href=" www.linkedin.com">voir le profil de Alaa</a></td>
+        </tr>
+    </tbody>
+</table>
+<form>
+    <section class="form">
+        <h3>-Contactez moi</h3>
+        <form id="contactForm">
+            <label for="Name">Nom:</label><br>
+            <input type="text" id="name" name="name"  required><br>
+            <label for="email">Adresse mail :</label><br>
+            <input type="email" id="email" name="email"  required><br>
+            <label for="message">message:</label><br>
+            <textarea name="message" id="message"  rows="5" required></textarea><br>
+            <button type="submit">Soumettre</button><br>
+        </form>
+    </section>
+</form>
+    <script>
+         document.getElementById('contactForm').addEventListener('submit', function(event) {
+                event.preventDefault(); 
+    
+                const name = document.getElementById('name').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const message = document.getElementById('message').value.trim();
+
+                if (name === '') {
+                    alert('Le champ "Nom" est requis.');
+                    return;
+                }
+                const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                if (!emailPattern.test(email)) {
+                    alert('Veuillez entrer une adresse email valide.');
+                    return;
+                }
+                alert('Formulaire soumis avec succès !');
+            });
+    </script>
+</body>
+</html>
